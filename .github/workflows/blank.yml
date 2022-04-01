@@ -13,3 +13,9 @@ jobs:
         LAST_NAME: Hui
       run: |
         echo $MY_VAR $FIRST_NAME $LAST_NAME.
+    - name: Compile project
+      run: |
+        g++ main.cpp
+    - name: run executable file
+      run: |
+        ./a.out
